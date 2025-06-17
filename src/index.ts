@@ -75,7 +75,7 @@ const stopServices = async () => {
 const showStatus = async () => {
   const currentHour = new Date().getHours();
   const targetVisitors = getTargetVisitorsForHour(currentHour);
-  const currentVisitors = getCurrentHourVisitorCount();
+  const currentVisitors = await getCurrentHourVisitorCount();
   const cronStatus = await getCronStatus();
   
   console.log('\n📊 === STATUS DASHBOARD ===');
