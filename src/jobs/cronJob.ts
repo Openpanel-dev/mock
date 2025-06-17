@@ -24,7 +24,7 @@ const getUserAgent = () => {
 // Cron job processor
 export const cronJobProcessor = async (job: Job): Promise<CronJobResult> => {
   try {
-    console.log('🕐 [Cron] Checking if we should spawn new visitors...');
+    job.log('🕐 [Cron] Checking if we should spawn new visitors...');
     
     const shouldSpawn = await shouldSpawnVisitor();
     
@@ -35,7 +35,7 @@ export const cronJobProcessor = async (job: Job): Promise<CronJobResult> => {
       const visitorId = generateVisitorId();
       const eventJourney = await getRandomJourney();
       
-      console.log(`👤 [Cron] Spawning new visitor: ${visitorId} with ${eventJourney.events.length} events`);
+      job.log(`👤 [Cron] Spawning new visitor: ${visitorId} with ${eventJourney.events.length} events`);
       
       // Add visitor job to the queue
       await visitorQueue.add('process-visitor', {
@@ -53,14 +53,14 @@ export const cronJobProcessor = async (job: Job): Promise<CronJobResult> => {
         removeOnFail: 5,
       });
       
-      console.log(`✅ [Cron] Visitor job queued for ${visitorId}`);
+      job.log(`✅ [Cron] Visitor job queued for ${visitorId}`);
     } else {
-      console.log('⏭️  [Cron] No new visitors needed at this time');
+      job.log('⏭️  [Cron] No new visitors needed at this time');
     }
     
     return { spawnedVisitor: shouldSpawn };
   } catch (error) {
-    console.error('❌ [Cron] Error in cron job:', error);
+    job.log(`❌ [Cron] Error in cron job: ${error}`);
     throw error;
   }
 };

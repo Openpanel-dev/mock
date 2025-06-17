@@ -5,7 +5,6 @@ interface OpenpanelConfig {
   clientId: string;
   clientSecret: string;
   apiUrl: string;
-  projectId: string;
 }
 
 interface RedisConfig {
@@ -25,10 +24,9 @@ export const CONFIG: Config = {
     url: process.env.REDIS_URL || 'redis://localhost:6379',
   },
   openpanel: {
-    clientId: process.env.OPENPANEL_CLIENT_ID || 'demo_client_id',
-    clientSecret: process.env.OPENPANEL_CLIENT_SECRET || 'demo_secret',
+    clientId: process.env.OPENPANEL_CLIENT_ID || 'dumb',
+    clientSecret: process.env.OPENPANEL_CLIENT_SECRET || 'dumb',
     apiUrl: process.env.OPENPANEL_API_URL || 'https://api.openpanel.dev',
-    projectId: process.env.PROJECT_ID || 'demo_project',
   },
   // Hourly visitor distribution (24 hours, 0-23)
   // Numbers represent target unique visitors per hour

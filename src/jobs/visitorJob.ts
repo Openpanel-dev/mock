@@ -3,6 +3,7 @@ import { getRandomDelay, type Event } from '../utils/eventTemplates.ts';
 import { redis } from '../redis.ts';
 
 import { OpenPanel } from '@openpanel/sdk';
+import { CONFIG } from '../../config.ts';
 
 interface VisitorJobData {
   visitorId: string;
@@ -23,14 +24,11 @@ interface VisitorJobResult {
 // Process a single visitor's journey
 export const visitorJobProcessor = async (job: Job<VisitorJobData>): Promise<VisitorJobResult> => {
   const { visitorId, events, spawnedAt, userAgent, ipAddress, referrer } = job.data;
-  const op = new OpenPanel({
-    clientId: process.env.CLIENT_ID ?? '',
-    clientSecret: process.env.CLIENT_SECRET ?? '',
-  });
+  const op = new OpenPanel(CONFIG.openpanel);
 
-  console.log('IP ADDRESS', ipAddress);
-  console.log('USER AGENT', userAgent);
-  console.log('REFERER', referrer);
+  job.log(`IP ADDRESS: ${ipAddress}`);
+  job.log(`USER AGENT: ${userAgent}`);
+  job.log(`REFERER: ${referrer}`);
 
 
   op.api.addHeader('x-client-ip', ipAddress);
@@ -38,7 +36,7 @@ export const visitorJobProcessor = async (job: Job<VisitorJobData>): Promise<Vis
   op.api.addHeader('origin', 'https://nike.com');
   
   try {
-    console.log(`👤 [Visitor] Starting journey for ${visitorId} with ${events.length} events`);
+    job.log(`👤 [Visitor] Starting journey for ${visitorId} with ${events.length} events`);
     
     // Add visitor-specific properties and realistic timestamps
     
@@ -66,12 +64,12 @@ export const visitorJobProcessor = async (job: Job<VisitorJobData>): Promise<Vis
       // Wait before sending the next event (except for the last one)
       if (i < events.length - 1) {
         const delay = getRandomDelay(200, 6000); // 2-15 seconds between events
-        console.log(`⏱️  [Visitor] ${visitorId} - Waiting ${Math.round(delay/1000)}s before next event...`);
+        job.log(`⏱️  [Visitor] ${visitorId} - Waiting ${Math.round(delay/1000)}s before next event...`);
         await new Promise(resolve => setTimeout(resolve, delay));
       }
     }
     
-    console.log(`✅ [Visitor] Journey completed for ${visitorId}`);
+    job.log(`✅ [Visitor] Journey completed for ${visitorId}`);
     
     return {
       visitorId,
@@ -81,7 +79,7 @@ export const visitorJobProcessor = async (job: Job<VisitorJobData>): Promise<Vis
     };
     
   } catch (error) {
-    console.error(`❌ [Visitor] Error processing journey for ${visitorId}:`, error);
+    job.log(`❌ [Visitor] Error processing journey for ${visitorId}: ${error}`);
     throw error;
   }
 };

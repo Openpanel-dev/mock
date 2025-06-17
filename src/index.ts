@@ -7,11 +7,7 @@ import { startDashboard } from './dashboard.ts';
 import type { Worker } from 'bullmq';
 
 console.log('🚀 Starting OpenPanel Mock Service...');
-console.log('📊 Configuration:', {
-  redisUrl: CONFIG.redis.url,
-  openpanelProjectId: CONFIG.openpanel.projectId,
-  openpanelApiUrl: CONFIG.openpanel.apiUrl,
-});
+console.log('📊 Configuration:', CONFIG);
 
 // Track service state
 let cronWorker: Worker | null = null;

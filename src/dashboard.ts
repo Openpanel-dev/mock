@@ -4,6 +4,7 @@ import { BullMQAdapter } from '@bull-board/api/bullMQAdapter';
 import { ExpressAdapter } from '@bull-board/express';
 import { cronQueue } from './scheduler';
 import { visitorQueue } from './jobs/cronJob';
+import { CONFIG } from '../config';
 
 const PORT = process.env.DASHBOARD_PORT || 3000;
 
@@ -45,10 +46,7 @@ app.get('/', (req: Request, res: Response) => {
 
 // Root redirect
 app.get('/client', (req: Request, res: Response) => {
-  res.json({
-    clientId: process.env.CLIENT_ID,
-    clientSecret: process.env.CLIENT_SECRET,
-  });
+  res.json(CONFIG.openpanel);
 });
 
 // Start dashboard server
