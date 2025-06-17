@@ -17,12 +17,8 @@ COPY tsconfig.json ./
 COPY src/ ./src/
 COPY config.ts ./
 
-# Create a non-root user for security
-RUN addgroup -g 1001 -S nodejs && \
-    adduser -S bun -u 1001 -G nodejs
-
-# Change ownership of the app directory
-RUN chown -R bun:nodejs /app
+# Change ownership of the app directory to the existing bun user
+RUN chown -R bun:bun /app
 USER bun
 
 # Expose port (if needed for health checks or monitoring)
