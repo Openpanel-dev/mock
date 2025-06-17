@@ -44,33 +44,6 @@ const startServices = async () => {
   }
 };
 
-// Stop all services
-const stopServices = async () => {
-  try {
-    console.log('\n🛑 Stopping services...');
-    
-    isRunning = false;
-    
-    // Stop cron jobs
-    await stopCronJob();
-    
-    // Close workers
-    if (cronWorker) {
-      await cronWorker.close();
-      cronWorker = null;
-    }
-    
-    if (visitorWorker) {
-      await visitorWorker.close();
-      visitorWorker = null;
-    }
-    
-    console.log('✅ All services stopped');
-  } catch (error) {
-    console.error('❌ Error stopping services:', error);
-  }
-};
-
 // Display status dashboard
 const showStatus = async () => {
   const currentHour = new Date().getHours();
@@ -90,17 +63,6 @@ const showStatus = async () => {
   
   console.log('========================\n');
 };
-
-// Handle graceful shutdown
-const gracefulShutdown = async (signal: string): Promise<void> => {
-  console.log(`\n📡 Received ${signal}, shutting down gracefully...`);
-  await stopServices();
-  process.exit(0);
-};
-
-// Setup signal handlers
-process.on('SIGINT', () => gracefulShutdown('SIGINT'));
-process.on('SIGTERM', () => gracefulShutdown('SIGTERM'));
 
 // Status display interval
 let statusInterval = null;

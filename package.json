@@ -8,7 +8,8 @@
     "start": "bun run src/index.ts",
     "dev": "bun --watch src/index.ts",
     "build": "bun build src/index.ts --outdir dist --target bun",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "deploy": "caprover deploy --appName mock --caproverName op-demo --branch main"
   },
   "dependencies": {
     "@ai-sdk/openai": "^1.3.22",
