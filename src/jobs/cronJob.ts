@@ -3,6 +3,7 @@ import { shouldSpawnVisitor, incrementVisitorCount, generateVisitorId } from '..
 import { getRandomJourney } from '../utils/eventTemplates.ts';
 import { redis } from '../redis.ts';
 import { faker } from '@faker-js/faker';
+import { getRandomIpAddress } from '../utils/ips.ts';
 
 interface CronJobResult {
   spawnedVisitor: boolean;
@@ -44,7 +45,7 @@ export const cronJobProcessor = async (job: Job): Promise<CronJobResult> => {
         events: eventJourney.events,
         referrer: eventJourney.referrer,
         userAgent: getUserAgent(),
-        ipAddress: faker.internet.ip(),
+        ipAddress: getRandomIpAddress()
       }, {
         // Add some randomization to when the job starts (0-30 seconds delay)
         delay: Math.floor(Math.random() * 30000),

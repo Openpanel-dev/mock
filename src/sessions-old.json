@@ -14,7 +14,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 119.99
+        "path": "/products/shoes/running-shoes",
+        "page_title": "Running Shoes"
       },
       {
         "event": "screen_view",
@@ -37,9 +38,19 @@
         "page_title": "Top 10 Running Shoes 2023"
       },
       {
+        "event": "remove_from_cart",
+        "path": "/products/shoes/running-shoes",
+        "page_title": "Running Shoes"
+      },
+      {
         "event": "screen_view",
         "path": "/products/shoes/athletic-shoes",
         "page_title": "Athletic Shoes"
+      },
+      {
+        "event": "checkout_failed",
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       }
     ]
   },
@@ -63,7 +74,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 29.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -82,18 +94,18 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 29.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 29.99
+        "path": "/checkout",
+        "page_title": "Checkout Page"
       },
       {
         "event": "screen_view",
         "path": "/support/faq",
         "page_title": "FAQ Support"
+      },
+      {
+        "event": "purchase",
+        "path": "/order-confirmation",
+        "page_title": "Order Confirmation"
       }
     ]
   },
@@ -112,7 +124,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 49.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -136,13 +149,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 49.99
-      },
-      {
-        "event": "checkout_failed",
-        "items": 1,
-        "total_price": 49.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       }
     ]
   },
@@ -161,7 +169,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 49.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -185,12 +194,18 @@
       },
       {
         "event": "add_to_cart",
-        "price": 109.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
         "path": "/products/sneakers",
         "page_title": "Sneakers"
+      },
+      {
+        "event": "remove_from_cart",
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -204,6 +219,8 @@
       },
       {
         "event": "search",
+        "path": "/products",
+        "page_title": "Product Search",
         "query": "running shoes"
       }
     ]
@@ -283,7 +300,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 149.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -292,17 +310,18 @@
       },
       {
         "event": "add_to_cart",
-        "price": 9.99
+        "path": "/products/sneakers/adidas-ultraboost-21",
+        "page_title": "Adidas Ultraboost 21"
       },
       {
         "event": "checkout",
-        "items": 2,
-        "total_price": 159.98000000000002
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
-        "event": "checkout_success",
-        "items": 2,
-        "total_price": 159.98000000000002
+        "event": "purchase",
+        "path": "/order-confirmation",
+        "page_title": "Order Confirmation"
       },
       {
         "event": "screen_view",
@@ -331,7 +350,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 9.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -364,7 +384,9 @@
         "page_title": "How to Choose the Right Shoes - Blog"
       },
       {
-        "event": "start_chat"
+        "event": "start_chat",
+        "path": "/support/contact-us",
+        "page_title": "Contact Us - Customer Support"
       },
       {
         "event": "screen_view",
@@ -388,6 +410,8 @@
       },
       {
         "event": "filter",
+        "path": "/products/sale",
+        "page_title": "Sale - Discounted Shoes",
         "filter_type": "price",
         "filter_value": "under $50"
       },
@@ -398,8 +422,10 @@
       },
       {
         "event": "add_to_cart",
+        "path": "/products/sale/running-shoes/nike-air-max",
+        "page_title": "Nike Air Max - Running Shoes",
         "product_id": "nike-air-max",
-        "price": 109.99
+        "price": 49.99
       },
       {
         "event": "screen_view",
@@ -413,13 +439,13 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 109.99
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       },
       {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 109.99
+        "event": "purchase",
+        "path": "/checkout/success",
+        "page_title": "Checkout Success"
       }
     ]
   },
@@ -438,9 +464,10 @@
       },
       {
         "event": "add_to_cart",
+        "path": "/products/men/sneakers-nike-air-max",
+        "page_title": "Nike Air Max Sneakers",
         "product_id": "nike-air-max-123",
-        "quantity": 1,
-        "price": 109.99
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -449,13 +476,14 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 109.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 109.99
+        "event": "purchase",
+        "path": "/order-confirmation",
+        "page_title": "Order Confirmation",
+        "order_id": "order-456"
       }
     ]
   },
@@ -479,7 +507,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 9.99
+        "path": "/products/sandals/adidas-adilette",
+        "page_title": "Adidas Adilette Sandals"
       },
       {
         "event": "screen_view",
@@ -503,7 +532,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 139.99
+        "path": "/products/sneakers/reebok-classic",
+        "page_title": "Reebok Classic Sneakers"
       }
     ]
   },
@@ -517,12 +547,15 @@
       },
       {
         "event": "filter",
+        "path": "/products/sale",
+        "page_title": "Sale - Discounted Shoes",
         "filter_type": "price",
         "filter_value": "under $50"
       },
       {
         "event": "add_to_cart",
-        "price": 119.99
+        "path": "/products/sale/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021 - Sale"
       }
     ]
   },
@@ -576,7 +609,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 89.99
+        "path": "/products/shoes/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -590,13 +624,13 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 89.99
+        "path": "/checkout",
+        "page_title": "Checkout Page"
       },
       {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 89.99
+        "event": "purchase",
+        "path": "/order-confirmation",
+        "page_title": "Order Confirmation"
       }
     ]
   },
@@ -615,7 +649,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 149.99
+        "path": "/products/sale/red-sneakers",
+        "page_title": "Red Sneakers - Add to Cart"
       },
       {
         "event": "screen_view",
@@ -624,13 +659,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 149.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 149.99
+        "path": "/checkout",
+        "page_title": "Checkout - Review Your Order"
       }
     ]
   },
@@ -649,7 +679,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 9.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -660,6 +691,11 @@
         "event": "screen_view",
         "path": "/support/account-deletion",
         "page_title": "Account Deletion Support"
+      },
+      {
+        "event": "remove_from_cart",
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -673,13 +709,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 9.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 9.99
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       },
       {
         "event": "screen_view",
@@ -698,9 +729,10 @@
       },
       {
         "event": "add_to_cart",
+        "path": "/products/shoes/running-shoes",
+        "page_title": "Running Shoes",
         "product_id": "12345",
-        "quantity": 1,
-        "price": 149.99
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -714,14 +746,15 @@
       },
       {
         "event": "checkout",
-        "loyalty_points_applied": true,
-        "items": 1,
-        "total_price": 149.99
+        "path": "/checkout",
+        "page_title": "Checkout",
+        "loyalty_points_applied": true
       },
       {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 149.99
+        "event": "purchase",
+        "path": "/order-confirmation",
+        "page_title": "Order Confirmation",
+        "order_id": "98765"
       },
       {
         "event": "screen_view",
@@ -745,7 +778,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 19.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -759,13 +793,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 19.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 19.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       }
     ]
   },
@@ -834,7 +863,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 19.99
+        "path": "/products/shoes/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -843,7 +873,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 129.99
+        "path": "/products/shoes/adidas-ultraboost-21",
+        "page_title": "Adidas Ultraboost 21"
       },
       {
         "event": "screen_view",
@@ -852,13 +883,8 @@
       },
       {
         "event": "checkout",
-        "items": 2,
-        "total_price": 149.98000000000002
-      },
-      {
-        "event": "checkout_success",
-        "items": 2,
-        "total_price": 149.98000000000002
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
         "event": "screen_view",
@@ -882,7 +908,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 59.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -891,6 +918,11 @@
       },
       {
         "event": "screen_view",
+        "path": "/products/sneakers/adidas-ultraboost-21",
+        "page_title": "Adidas Ultraboost 21"
+      },
+      {
+        "event": "remove_from_cart",
         "path": "/products/sneakers/adidas-ultraboost-21",
         "page_title": "Adidas Ultraboost 21"
       }
@@ -911,9 +943,10 @@
       },
       {
         "event": "add_to_cart",
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021",
         "product_id": "nike-air-max-2021",
-        "quantity": 1,
-        "price": 19.99
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -937,7 +970,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 49.99
+        "path": "/products/shoes/running-shoes",
+        "page_title": "Running Shoes"
       },
       {
         "event": "screen_view",
@@ -961,18 +995,18 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 49.99
-      },
-      {
-        "event": "checkout_failed",
-        "items": 1,
-        "total_price": 49.99
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       },
       {
         "event": "screen_view",
         "path": "/support/faq",
         "page_title": "FAQ"
+      },
+      {
+        "event": "purchase",
+        "path": "/checkout/success",
+        "page_title": "Checkout Success"
       }
     ]
   },
@@ -991,7 +1025,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 39.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -1000,13 +1035,13 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 39.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 39.99
+        "event": "purchase",
+        "path": "/order-confirmation",
+        "page_title": "Order Confirmation"
       },
       {
         "event": "screen_view",
@@ -1035,7 +1070,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 9.99
+        "path": "/products/sneakers/limited-edition-nike-air-max",
+        "page_title": "Limited Edition Nike Air Max"
       },
       {
         "event": "screen_view",
@@ -1044,18 +1080,18 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 9.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 9.99
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       },
       {
         "event": "screen_view",
         "path": "/blog/latest-sneaker-releases",
         "page_title": "Latest Sneaker Releases"
+      },
+      {
+        "event": "purchase",
+        "path": "/checkout/success",
+        "page_title": "Checkout Success"
       }
     ]
   },
@@ -1124,7 +1160,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 9.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -1138,13 +1175,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 9.99
-      },
-      {
-        "event": "checkout_failed",
-        "items": 1,
-        "total_price": 9.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       }
     ]
   },
@@ -1158,6 +1190,8 @@
       },
       {
         "event": "search",
+        "path": "/products/sneakers",
+        "page_title": "Sneakers",
         "search_term": "running shoes"
       },
       {
@@ -1167,6 +1201,8 @@
       },
       {
         "event": "filter",
+        "path": "/products/sneakers",
+        "page_title": "Sneakers",
         "filter_type": "brand",
         "filter_value": "Nike"
       },
@@ -1177,21 +1213,29 @@
       },
       {
         "event": "add_to_cart",
-        "price": 49.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021 - Sneakers"
       },
       {
         "event": "search",
+        "path": "/products/sneakers",
+        "page_title": "Sneakers",
         "search_term": "basketball shoes"
       },
       {
-        "event": "checkout",
-        "items": 1,
-        "total_price": 49.99
+        "event": "remove_from_cart",
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021 - Sneakers"
       },
       {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 49.99
+        "event": "checkout",
+        "path": "/checkout",
+        "page_title": "Checkout"
+      },
+      {
+        "event": "purchase",
+        "path": "/order-confirmation",
+        "page_title": "Order Confirmation"
       }
     ]
   },
@@ -1205,6 +1249,8 @@
       },
       {
         "event": "filter",
+        "path": "/products/wide-fit",
+        "page_title": "Wide Fit Shoes",
         "filter_type": "fit",
         "filter_value": "wide"
       },
@@ -1215,8 +1261,9 @@
       },
       {
         "event": "add_to_cart",
-        "product_id": "12345",
-        "price": 149.99
+        "path": "/products/wide-fit/running-shoes-12345",
+        "page_title": "Running Shoes - Wide Fit",
+        "product_id": "12345"
       },
       {
         "event": "screen_view",
@@ -1240,13 +1287,13 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 149.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 149.99
+        "event": "purchase",
+        "path": "/checkout/success",
+        "page_title": "Purchase Success"
       }
     ]
   },
@@ -1265,7 +1312,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 99.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -1274,13 +1322,13 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 99.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 99.99
+        "event": "purchase",
+        "path": "/order-confirmation",
+        "page_title": "Order Confirmation"
       }
     ]
   },
@@ -1299,7 +1347,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 19.99
+        "path": "/products/sneakers/limited-edition-nike-air-max",
+        "page_title": "Limited Edition Nike Air Max"
       },
       {
         "event": "screen_view",
@@ -1308,13 +1357,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 19.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 19.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       }
     ]
   },
@@ -1333,6 +1377,7 @@
       },
       {
         "event": "search",
+        "path": "/products/shoes",
         "query": "gift"
       },
       {
@@ -1342,8 +1387,8 @@
       },
       {
         "event": "add_to_cart",
-        "product_id": "running-shoes-xyz",
-        "price": 139.99
+        "path": "/products/shoes/running-shoes-xyz",
+        "product_id": "running-shoes-xyz"
       },
       {
         "event": "screen_view",
@@ -1357,13 +1402,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 139.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 139.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       }
     ]
   },
@@ -1377,6 +1417,8 @@
       },
       {
         "event": "filter",
+        "path": "/products/sale",
+        "page_title": "Sale - Discounted Shoes",
         "filter_type": "price",
         "filter_value": "$50-$100"
       },
@@ -1387,8 +1429,9 @@
       },
       {
         "event": "add_to_cart",
-        "product_id": "nikes-air-max-2021",
-        "price": 69.99
+        "path": "/products/sale/nikes-air-max-2021",
+        "page_title": "Nike Air Max 2021 - Sale",
+        "product_id": "nikes-air-max-2021"
       },
       {
         "event": "screen_view",
@@ -1397,8 +1440,9 @@
       },
       {
         "event": "add_to_cart",
-        "product_id": "adidas-ultraboost-21",
-        "price": 39.99
+        "path": "/products/sale/adidas-ultraboost-21",
+        "page_title": "Adidas Ultraboost 21 - Sale",
+        "product_id": "adidas-ultraboost-21"
       },
       {
         "event": "screen_view",
@@ -1407,13 +1451,8 @@
       },
       {
         "event": "checkout",
-        "items": 2,
-        "total_price": 109.97999999999999
-      },
-      {
-        "event": "checkout_success",
-        "items": 2,
-        "total_price": 109.97999999999999
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
         "event": "screen_view",
@@ -1437,6 +1476,7 @@
       },
       {
         "event": "search",
+        "path": "/products",
         "query": "gift"
       },
       {
@@ -1446,8 +1486,8 @@
       },
       {
         "event": "add_to_cart",
-        "product_id": "sneaker-12345",
-        "price": 89.99
+        "path": "/products/shoes/sneakers-for-gifts",
+        "product_id": "sneaker-12345"
       },
       {
         "event": "screen_view",
@@ -1456,13 +1496,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 89.99
-      },
-      {
-        "event": "checkout_failed",
-        "items": 1,
-        "total_price": 89.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       }
     ]
   },
@@ -1496,7 +1531,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 19.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -1514,7 +1550,9 @@
         "page_title": "Shoe Care Tips"
       },
       {
-        "event": "send_message"
+        "event": "send_message",
+        "path": "/support/contact-us",
+        "page_title": "Contact Us"
       }
     ]
   },
@@ -1538,7 +1576,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 109.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -1547,13 +1586,13 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 109.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 109.99
+        "event": "purchase",
+        "path": "/order-confirmation",
+        "page_title": "Order Confirmation"
       },
       {
         "event": "screen_view",
@@ -1572,7 +1611,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 129.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021 - Sneakers"
       },
       {
         "event": "screen_view",
@@ -1591,13 +1631,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 129.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 129.99
+        "path": "/checkout",
+        "page_title": "Checkout - Review Your Order"
       }
     ]
   },
@@ -1616,7 +1651,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 109.99
+        "path": "/products/running-shoes/black-running-shoes",
+        "page_title": "Black Running Shoes"
       },
       {
         "event": "screen_view",
@@ -1625,13 +1661,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 109.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 109.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
         "event": "screen_view",
@@ -1650,6 +1681,7 @@
       },
       {
         "event": "search",
+        "path": "/products/search",
         "query": "nonexistent shoes"
       },
       {
@@ -1659,8 +1691,8 @@
       },
       {
         "event": "add_to_cart",
-        "product_id": "nike-air-max-2021",
-        "price": 149.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "product_id": "nike-air-max-2021"
       },
       {
         "event": "screen_view",
@@ -1684,7 +1716,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 99.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -1695,6 +1728,11 @@
         "event": "screen_view",
         "path": "/support/shipping-returns",
         "page_title": "Shipping & Returns"
+      },
+      {
+        "event": "checkout_failed",
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       }
     ]
   },
@@ -1708,7 +1746,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 49.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -1722,7 +1761,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 9.99
+        "path": "/products/sandals/adidas-adilette",
+        "page_title": "Adidas Adilette"
       },
       {
         "event": "screen_view",
@@ -1736,7 +1776,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 49.99
+        "path": "/products/boots/timberland-classic-6-inch",
+        "page_title": "Timberland Classic 6-Inch"
       },
       {
         "event": "screen_view",
@@ -1760,7 +1801,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 109.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -1771,6 +1813,11 @@
         "event": "screen_view",
         "path": "/products/sandals",
         "page_title": "Sandals Collection"
+      },
+      {
+        "event": "remove_from_cart",
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       }
     ]
   },
@@ -1789,7 +1836,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 129.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -1798,13 +1846,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 129.99
-      },
-      {
-        "event": "checkout_failed",
-        "items": 1,
-        "total_price": 129.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       }
     ]
   },
@@ -1818,6 +1861,8 @@
       },
       {
         "event": "filter",
+        "path": "/products/wide",
+        "page_title": "Wide Fit Shoes",
         "filter_type": "fit",
         "filter_value": "wide"
       },
@@ -1828,8 +1873,9 @@
       },
       {
         "event": "add_to_cart",
-        "product_id": "CRS123",
-        "price": 109.99
+        "path": "/products/wide/comfortable-running-shoes",
+        "page_title": "Comfortable Running Shoes",
+        "product_id": "CRS123"
       },
       {
         "event": "screen_view",
@@ -1848,13 +1894,13 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 109.99
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       },
       {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 109.99
+        "event": "purchase",
+        "path": "/checkout/success",
+        "page_title": "Checkout Success"
       }
     ]
   },
@@ -1878,7 +1924,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 129.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -1894,6 +1941,11 @@
         "event": "screen_view",
         "path": "/support/contact-us",
         "page_title": "Contact Us"
+      },
+      {
+        "event": "remove_from_cart",
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       }
     ]
   },
@@ -1912,7 +1964,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 19.99
+        "path": "/products/shoes/running-shoes-123",
+        "page_title": "Running Shoes 123"
       },
       {
         "event": "screen_view",
@@ -1928,6 +1981,11 @@
         "event": "screen_view",
         "path": "/products/shoes/running-shoes-123/details",
         "page_title": "Running Shoes 123 Details"
+      },
+      {
+        "event": "remove_from_cart",
+        "path": "/products/shoes/running-shoes-123",
+        "page_title": "Running Shoes 123"
       }
     ]
   },
@@ -1986,6 +2044,7 @@
       },
       {
         "event": "search",
+        "path": "/products/footwear/sneakers",
         "query": "similar shoes to photo search"
       },
       {
@@ -1995,8 +2054,8 @@
       },
       {
         "event": "add_to_cart",
-        "product_id": "nike-air-max-2021",
-        "price": 149.99
+        "path": "/products/footwear/sneakers/nike-air-max-2021",
+        "product_id": "nike-air-max-2021"
       }
     ]
   },
@@ -2015,7 +2074,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 139.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -2024,13 +2084,13 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 139.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 139.99
+        "event": "purchase",
+        "path": "/order-confirmation",
+        "page_title": "Order Confirmation"
       }
     ]
   },
@@ -2049,7 +2109,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 19.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -2063,13 +2124,13 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 19.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
-        "event": "checkout_failed",
-        "items": 1,
-        "total_price": 19.99
+        "event": "checkout_success",
+        "path": "/checkout/success",
+        "page_title": "Checkout Success"
       }
     ]
   },
@@ -2083,12 +2144,15 @@
       },
       {
         "event": "filter",
+        "path": "/products/size/10",
+        "page_title": "Size 10 Shoes",
         "filter_type": "size",
         "filter_value": "10"
       },
       {
         "event": "add_to_cart",
-        "price": 9.99
+        "path": "/products/shoes/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       }
     ]
   },
@@ -2107,7 +2171,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 19.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -2126,13 +2191,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 19.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 19.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       }
     ]
   },
@@ -2151,7 +2211,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 139.99
+        "path": "/products/shoes/running-shoes",
+        "page_title": "Running Shoes"
       },
       {
         "event": "screen_view",
@@ -2180,13 +2241,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 139.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 139.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
         "event": "screen_view",
@@ -2205,7 +2261,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 99.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -2234,13 +2291,13 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 99.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 99.99
+        "event": "purchase",
+        "path": "/order-confirmation",
+        "page_title": "Order Confirmation"
       },
       {
         "event": "screen_view",
@@ -2259,6 +2316,8 @@
       },
       {
         "event": "filter",
+        "path": "/products/suede",
+        "page_title": "Suede Shoes",
         "filters": [
           "vegan leather",
           "waterproof"
@@ -2271,9 +2330,10 @@
       },
       {
         "event": "add_to_cart",
+        "path": "/products/suede/eco-friendly-sneakers",
+        "page_title": "Eco-Friendly Sneakers",
         "product_id": "eco-friendly-sneakers",
-        "quantity": 1,
-        "price": 39.99
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -2287,13 +2347,14 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 39.99
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       },
       {
-        "event": "checkout_failed",
-        "items": 1,
-        "total_price": 39.99
+        "event": "purchase",
+        "path": "/checkout/success",
+        "page_title": "Checkout Success",
+        "order_id": "123456"
       }
     ]
   },
@@ -2317,7 +2378,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 109.99
+        "path": "/products/sandals/adidas-adilette",
+        "page_title": "Adidas Adilette Sandals"
       },
       {
         "event": "screen_view",
@@ -2336,13 +2398,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 109.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 109.99
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       },
       {
         "event": "screen_view",
@@ -2366,7 +2423,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 79.99
+        "path": "/products/footwear/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -2379,7 +2437,9 @@
         "page_title": "Restock Notification"
       },
       {
-        "event": "send_message"
+        "event": "send_message",
+        "path": "/support/restock-notification",
+        "page_title": "Restock Notification"
       }
     ]
   },
@@ -2398,9 +2458,10 @@
       },
       {
         "event": "add_to_cart",
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021",
         "product_id": "nike-air-max-2021",
-        "quantity": 1,
-        "price": 79.99
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -2409,13 +2470,15 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 79.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 79.99
+        "event": "purchase",
+        "path": "/order-confirmation",
+        "page_title": "Order Confirmation",
+        "order_id": "123456",
+        "total_amount": 99.99
       },
       {
         "event": "screen_view",
@@ -2439,9 +2502,10 @@
       },
       {
         "event": "add_to_cart",
+        "path": "/products/shoes/running-shoes",
+        "page_title": "Running Shoes",
         "product_id": "running-shoe-123",
-        "quantity": 1,
-        "price": 39.99
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -2450,9 +2514,10 @@
       },
       {
         "event": "add_to_cart",
+        "path": "/products/shoes/casual-shoes",
+        "page_title": "Casual Shoes",
         "product_id": "casual-shoe-456",
-        "quantity": 1,
-        "price": 119.99
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -2461,13 +2526,8 @@
       },
       {
         "event": "checkout",
-        "items": 2,
-        "total_price": 159.98
-      },
-      {
-        "event": "checkout_success",
-        "items": 2,
-        "total_price": 159.98
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
         "event": "screen_view",
@@ -2511,7 +2571,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 69.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -2530,13 +2591,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 69.99
-      },
-      {
-        "event": "checkout_failed",
-        "items": 1,
-        "total_price": 69.99
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       }
     ]
   },
@@ -2550,6 +2606,7 @@
       },
       {
         "event": "search",
+        "path": "/products/running-shoes",
         "query": "black running shoes"
       },
       {
@@ -2559,8 +2616,8 @@
       },
       {
         "event": "add_to_cart",
-        "product_id": "black-running-shoe-12345",
-        "price": 9.99
+        "path": "/products/running-shoes/black-running-shoe-12345",
+        "product_id": "black-running-shoe-12345"
       },
       {
         "event": "screen_view",
@@ -2569,18 +2626,18 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 9.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 9.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
         "event": "screen_view",
         "path": "/blog/shoe-care-tips",
         "page_title": "Shoe Care Tips"
+      },
+      {
+        "event": "purchase",
+        "path": "/checkout/success",
+        "page_title": "Purchase Success"
       }
     ]
   },
@@ -2594,6 +2651,8 @@
       },
       {
         "event": "filter",
+        "path": "/products/shoes",
+        "page_title": "Shoes Collection",
         "filter_type": "fit",
         "filter_value": "wide"
       },
@@ -2604,8 +2663,9 @@
       },
       {
         "event": "add_to_cart",
-        "product_id": "12345",
-        "price": 149.99
+        "path": "/products/shoes/wide-comfort-sneakers",
+        "page_title": "Wide Comfort Sneakers",
+        "product_id": "12345"
       },
       {
         "event": "screen_view",
@@ -2619,18 +2679,18 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 149.99
-      },
-      {
-        "event": "checkout_failed",
-        "items": 1,
-        "total_price": 149.99
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       },
       {
         "event": "screen_view",
         "path": "/products/shoes/wide-comfort-sneakers/details",
         "page_title": "Wide Comfort Sneakers Details"
+      },
+      {
+        "event": "purchase",
+        "path": "/checkout/success",
+        "page_title": "Checkout Success"
       }
     ]
   },
@@ -2648,7 +2708,9 @@
         "page_title": "Nike Air Max 2021"
       },
       {
-        "event": "search"
+        "event": "search",
+        "path": "/products/sneakers",
+        "page_title": "Sneakers Search Results"
       }
     ]
   },
@@ -2667,9 +2729,10 @@
       },
       {
         "event": "add_to_cart",
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021",
         "size": "10",
-        "color": "red",
-        "price": 69.99
+        "color": "red"
       },
       {
         "event": "screen_view",
@@ -2678,9 +2741,10 @@
       },
       {
         "event": "add_to_cart",
+        "path": "/products/sneakers/adidas-ultraboost-21",
+        "page_title": "Adidas Ultraboost 21",
         "size": "9",
-        "color": "black",
-        "price": 129.99
+        "color": "black"
       },
       {
         "event": "screen_view",
@@ -2689,13 +2753,13 @@
       },
       {
         "event": "checkout",
-        "items": 2,
-        "total_price": 199.98000000000002
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       },
       {
-        "event": "checkout_success",
-        "items": 2,
-        "total_price": 199.98000000000002
+        "event": "purchase",
+        "path": "/checkout/success",
+        "page_title": "Checkout Success"
       }
     ]
   },
@@ -2709,6 +2773,8 @@
       },
       {
         "event": "filter",
+        "path": "/products/shoes",
+        "page_title": "Shoes Collection",
         "filters": {
           "size": "10",
           "brand": "Nike",
@@ -2723,9 +2789,10 @@
       },
       {
         "event": "add_to_cart",
+        "path": "/products/shoes/nike-air-max-90",
+        "page_title": "Nike Air Max 90",
         "product_id": "nike-air-max-90",
-        "quantity": 1,
-        "price": 49.99
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -2738,24 +2805,30 @@
         "page_title": "Adidas Ultraboost"
       },
       {
+        "event": "remove_from_cart",
+        "path": "/products/shoes/nike-air-max-90",
+        "page_title": "Nike Air Max 90",
+        "product_id": "nike-air-max-90"
+      },
+      {
         "event": "screen_view",
         "path": "/products/shoes/adidas-ultraboost/details",
         "page_title": "Adidas Ultraboost Details"
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 49.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 49.99
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       },
       {
         "event": "screen_view",
         "path": "/support/shipping-policy",
         "page_title": "Shipping Policy"
+      },
+      {
+        "event": "purchase",
+        "path": "/checkout/success",
+        "page_title": "Checkout Success"
       }
     ]
   },
@@ -2779,7 +2852,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 89.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021 - Sneakers"
       },
       {
         "event": "screen_view",
@@ -2803,13 +2877,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 89.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 89.99
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       },
       {
         "event": "screen_view",
@@ -2848,7 +2917,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 49.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -2861,6 +2931,11 @@
         "page_title": "Adidas Ultraboost 21 Reviews"
       },
       {
+        "event": "remove_from_cart",
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
+      },
+      {
         "event": "screen_view",
         "path": "/blog/how-to-choose-the-right-shoes",
         "page_title": "How to Choose the Right Shoes"
@@ -2871,7 +2946,9 @@
         "page_title": "Shoe Sizing Guide"
       },
       {
-        "event": "search"
+        "event": "search",
+        "path": "/products",
+        "page_title": "Product Search"
       }
     ]
   },
@@ -2895,7 +2972,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 89.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -2914,13 +2992,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 89.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 89.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
         "event": "screen_view",
@@ -2979,6 +3052,8 @@
       },
       {
         "event": "search",
+        "path": "/products",
+        "page_title": "Product Search",
         "query": "running shoes"
       }
     ]
@@ -3098,7 +3173,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 149.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -3117,13 +3193,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 149.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 149.99
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       },
       {
         "event": "screen_view",
@@ -3147,7 +3218,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 39.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -3156,18 +3228,18 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 39.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 39.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
         "event": "screen_view",
         "path": "/support/shipping-policy",
         "page_title": "Shipping Policy"
+      },
+      {
+        "event": "purchase",
+        "path": "/order-confirmation",
+        "page_title": "Order Confirmation"
       }
     ]
   },
@@ -3181,9 +3253,10 @@
       },
       {
         "event": "add_to_cart",
+        "path": "/products/shoes/running-shoes-123",
+        "page_title": "Running Shoes - Shop Now",
         "product_id": "running-shoes-123",
-        "quantity": 1,
-        "price": 99.99
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -3194,6 +3267,12 @@
         "event": "screen_view",
         "path": "/blog/best-running-shoes-2023",
         "page_title": "Best Running Shoes of 2023"
+      },
+      {
+        "event": "remove_from_cart",
+        "path": "/checkout",
+        "page_title": "Checkout - Complete Your Purchase",
+        "product_id": "running-shoes-123"
       }
     ]
   },
@@ -3226,6 +3305,8 @@
       },
       {
         "event": "filter",
+        "path": "/products",
+        "page_title": "All Products",
         "filters": {
           "size": "10",
           "brand": "Nike",
@@ -3240,9 +3321,10 @@
       },
       {
         "event": "add_to_cart",
+        "path": "/products/sneakers/nike-air-max-90",
+        "page_title": "Nike Air Max 90",
         "product_id": "nike-air-max-90",
-        "quantity": 1,
-        "price": 129.99
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -3271,7 +3353,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 99.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -3285,18 +3368,18 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 99.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 99.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
         "event": "screen_view",
         "path": "/blog/top-5-sneaker-brands",
         "page_title": "Top 5 Sneaker Brands"
+      },
+      {
+        "event": "purchase",
+        "path": "/order-confirmation",
+        "page_title": "Order Confirmation"
       }
     ]
   },
@@ -3310,7 +3393,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 59.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -3319,18 +3403,18 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 59.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 59.99
+        "path": "/checkout",
+        "page_title": "Checkout Page"
       },
       {
         "event": "screen_view",
         "path": "/products/sneakers/nike-air-max-2021/details",
         "page_title": "Nike Air Max 2021 Details"
+      },
+      {
+        "event": "purchase",
+        "path": "/order-confirmation",
+        "page_title": "Order Confirmation"
       }
     ]
   },
@@ -3349,9 +3433,10 @@
       },
       {
         "event": "add_to_cart",
+        "path": "/products/shoes/running-shoes",
+        "page_title": "Running Shoes",
         "product_id": "running-shoe-123",
-        "quantity": 1,
-        "price": 129.99
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -3370,13 +3455,13 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 129.99
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       },
       {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 129.99
+        "event": "purchase",
+        "path": "/checkout/success",
+        "page_title": "Checkout Success"
       }
     ]
   },
@@ -3395,6 +3480,8 @@
       },
       {
         "event": "search",
+        "path": "/products/sneakers",
+        "page_title": "Sneakers",
         "query": "out of stock"
       },
       {
@@ -3429,7 +3516,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 69.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -3438,13 +3526,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 69.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 69.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       }
     ]
   },
@@ -3463,7 +3546,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 29.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -3497,6 +3581,8 @@
       },
       {
         "event": "search",
+        "path": "/products/footwear",
+        "page_title": "Footwear",
         "query": "comfortable sneakers"
       }
     ]
@@ -3521,7 +3607,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 149.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -3550,13 +3637,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 149.99
-      },
-      {
-        "event": "checkout_failed",
-        "items": 1,
-        "total_price": 149.99
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       }
     ]
   },
@@ -3575,7 +3657,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 39.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -3591,6 +3674,11 @@
         "event": "screen_view",
         "path": "/checkout",
         "page_title": "Checkout"
+      },
+      {
+        "event": "remove_from_cart",
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       }
     ]
   },
@@ -3629,10 +3717,14 @@
       },
       {
         "event": "search",
+        "path": "/support/faq",
+        "page_title": "FAQ - Returns and Deliveries",
         "query": "return policy"
       },
       {
         "event": "send_message",
+        "path": "/support/chat",
+        "page_title": "Customer Support Chat",
         "message": "Can you explain the return process?"
       }
     ]
@@ -3652,7 +3744,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 69.99
+        "path": "/products/shoes/running-shoes",
+        "page_title": "Running Shoes"
       },
       {
         "event": "screen_view",
@@ -3666,7 +3759,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 19.99
+        "path": "/products/shoes/casual-shoes",
+        "page_title": "Casual Shoes"
       },
       {
         "event": "screen_view",
@@ -3675,13 +3769,8 @@
       },
       {
         "event": "checkout",
-        "items": 2,
-        "total_price": 89.97999999999999
-      },
-      {
-        "event": "checkout_success",
-        "items": 2,
-        "total_price": 89.97999999999999
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       }
     ]
   },
@@ -3700,7 +3789,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 89.99
+        "path": "/products/shoes/running-shoes/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -3724,18 +3814,18 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 89.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 89.99
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
         "event": "screen_view",
         "path": "/products/shoes/running-shoes/nike-air-max-2021/details",
         "page_title": "Nike Air Max 2021 Details"
+      },
+      {
+        "event": "purchase",
+        "path": "/order-confirmation",
+        "page_title": "Order Confirmation"
       }
     ]
   },
@@ -3759,7 +3849,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 9.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -3770,6 +3861,11 @@
         "event": "screen_view",
         "path": "/products/sandals/adidas-adilette",
         "page_title": "Adidas Adilette"
+      },
+      {
+        "event": "remove_from_cart",
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -3788,13 +3884,13 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 9.99
+        "path": "/products/sandals/adidas-adilette",
+        "page_title": "Adidas Adilette"
       },
       {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 9.99
+        "event": "purchase",
+        "path": "/products/sandals/adidas-adilette",
+        "page_title": "Adidas Adilette"
       }
     ]
   },
@@ -3818,7 +3914,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 9.99
+        "path": "/products/shoes/running-shoes/nike-air-max",
+        "page_title": "Nike Air Max"
       },
       {
         "event": "screen_view",
@@ -3842,13 +3939,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 9.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 9.99
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       },
       {
         "event": "screen_view",
@@ -3872,9 +3964,10 @@
       },
       {
         "event": "add_to_cart",
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021",
         "product_id": "nike-air-max-2021",
-        "quantity": 1,
-        "price": 9.99
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -3885,6 +3978,13 @@
         "event": "screen_view",
         "path": "/products/sneakers",
         "page_title": "Sneakers"
+      },
+      {
+        "event": "remove_from_cart",
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021",
+        "product_id": "nike-air-max-2021",
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -3913,7 +4013,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 69.99
+        "path": "/products/running-shoes/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -3937,13 +4038,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 69.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 69.99
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       }
     ]
   },
@@ -3962,10 +4058,11 @@
       },
       {
         "event": "add_to_cart",
+        "path": "/products/shoes/running-shoes",
+        "page_title": "Running Shoes",
         "product_id": "running-shoe-123",
         "size": "10",
-        "color": "blue",
-        "price": 9.99
+        "color": "blue"
       },
       {
         "event": "screen_view",
@@ -3979,13 +4076,13 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 9.99
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       },
       {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 9.99
+        "event": "purchase",
+        "path": "/checkout/success",
+        "page_title": "Checkout Success"
       }
     ]
   },
@@ -3999,7 +4096,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 109.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -4013,7 +4111,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 149.99
+        "path": "/products/boots/timberland-classic-6-inch",
+        "page_title": "Timberland Classic 6-Inch Boot"
       }
     ]
   },
@@ -4027,7 +4126,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 129.99
+        "path": "/products/shoes/running-shoes",
+        "page_title": "Running Shoes"
       },
       {
         "event": "screen_view",
@@ -4050,6 +4150,11 @@
         "page_title": "Casual Shoes"
       },
       {
+        "event": "remove_from_cart",
+        "path": "/products/shoes/running-shoes",
+        "page_title": "Running Shoes"
+      },
+      {
         "event": "screen_view",
         "path": "/support/shipping-policy",
         "page_title": "Shipping Policy"
@@ -4061,13 +4166,8 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 129.99
-      },
-      {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 129.99
+        "path": "/cart",
+        "page_title": "Shopping Cart"
       }
     ]
   },
@@ -4096,6 +4196,8 @@
       },
       {
         "event": "search",
+        "path": "/products/shoes",
+        "page_title": "Shoes Collection",
         "query": "size 10 availability"
       },
       {
@@ -4120,7 +4222,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 49.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
@@ -4138,19 +4241,24 @@
         "page_title": "Adidas Ultraboost 21"
       },
       {
-        "event": "checkout",
-        "items": 1,
-        "total_price": 49.99
+        "event": "remove_from_cart",
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 49.99
+        "event": "checkout",
+        "path": "/checkout",
+        "page_title": "Checkout"
       },
       {
         "event": "screen_view",
         "path": "/support/shipping-policy",
         "page_title": "Shipping Policy"
+      },
+      {
+        "event": "purchase",
+        "path": "/order-confirmation",
+        "page_title": "Order Confirmation"
       }
     ]
   },
@@ -4169,12 +4277,18 @@
       },
       {
         "event": "add_to_cart",
-        "price": 119.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021"
       },
       {
         "event": "screen_view",
         "path": "/products/sneakers/nike-air-max-2021/details",
         "page_title": "Nike Air Max 2021 Details"
+      },
+      {
+        "event": "checkout_failed",
+        "path": "/checkout",
+        "page_title": "Checkout"
       }
     ]
   },
@@ -4188,7 +4302,8 @@
       },
       {
         "event": "add_to_cart",
-        "price": 149.99
+        "path": "/products/sneakers/nike-air-max-2021",
+        "page_title": "Nike Air Max 2021 - Sneakers"
       },
       {
         "event": "screen_view",
@@ -4196,7 +4311,9 @@
         "page_title": "How to Choose the Right Shoes"
       },
       {
-        "event": "search"
+        "event": "search",
+        "path": "/",
+        "page_title": "Home Page"
       },
       {
         "event": "screen_view",
@@ -4205,13 +4322,13 @@
       },
       {
         "event": "checkout",
-        "items": 1,
-        "total_price": 149.99
+        "path": "/checkout",
+        "page_title": "Checkout Page"
       },
       {
-        "event": "checkout_success",
-        "items": 1,
-        "total_price": 149.99
+        "event": "purchase",
+        "path": "/order-confirmation",
+        "page_title": "Order Confirmation"
       }
     ]
   },
@@ -4369,7 +4486,8 @@
       },
       {
         "event": "start_chat",
-        "chat_reason": "Unable to find answer in FAQ"
+        "chat_reason": "Unable to find answer in FAQ",
+        "path": "/support/faq"
       }
     ]
   },
@@ -4435,6 +4553,11 @@
         "event": "screen_view",
         "path": "/cart",
         "page_title": "Your Shopping Cart"
+      },
+      {
+        "event": "checkout_failed",
+        "reason": "Cart is empty",
+        "path": "/cart"
       }
     ]
   },
@@ -4478,7 +4601,8 @@
       },
       {
         "event": "start_chat",
-        "chat_topic": "Inquiry about shoe recommendations"
+        "chat_topic": "Inquiry about shoe recommendations",
+        "path": "/blog/best-running-shoes-2023"
       }
     ]
   },
@@ -4602,7 +4726,8 @@
       },
       {
         "event": "start_chat",
-        "chat_reason": "Inquiry about sneaker sizes"
+        "chat_reason": "Inquiry about sneaker sizes",
+        "path": "/products/sneakers"
       }
     ]
   },
@@ -4978,7 +5103,7 @@
         "product_id": "air-max-2023",
         "product_name": "Nike Air Max 2023",
         "category": "sneakers",
-        "price": 99.99
+        "price": 150
       },
       {
         "event": "screen_view",
@@ -5048,10 +5173,19 @@
       },
       {
         "event": "sort",
-        "sort_by": "discount_percentage"
+        "sort_by": "discount_percentage",
+        "path": "/products/sale",
+        "page_title": "Sale - Discounted Shoes"
       },
       {
         "event": "screen_view",
+        "path": "/products/sneakers/air-max-90-discounted",
+        "page_title": "Nike Air Max 90 - Discounted"
+      },
+      {
+        "event": "remove_from_cart",
+        "product_slug": "air-max-90-discounted",
+        "reason": "Found better discount",
         "path": "/products/sneakers/air-max-90-discounted",
         "page_title": "Nike Air Max 90 - Discounted"
       },
@@ -5147,6 +5281,12 @@
         "event": "screen_view",
         "path": "/products/sandals/beach-comfort-2024",
         "page_title": "Beach Comfort 2024 Sandals"
+      },
+      {
+        "event": "purchase",
+        "product_id": "beach-comfort-2024",
+        "price": 49.99,
+        "currency": "USD"
       }
     ]
   },
@@ -5172,7 +5312,7 @@
         "event": "add_to_cart",
         "product_id": "nike-air-zoom-pegasus",
         "category": "running",
-        "price": 79.99
+        "price": 120
       },
       {
         "event": "screen_view",
@@ -5216,7 +5356,9 @@
       },
       {
         "event": "newsletter_signup",
-        "email": "user@example.com"
+        "email": "user@example.com",
+        "path": "/products/sneakers/air-max-2024",
+        "page_title": "Air Max 2024 Sneakers"
       },
       {
         "event": "screen_view",
@@ -5522,7 +5664,7 @@
         "event": "add_to_cart",
         "product_id": "nike-air-max-270",
         "category": "sneakers",
-        "price": 129.99
+        "price": 150
       },
       {
         "event": "screen_view",
@@ -5626,7 +5768,8 @@
       },
       {
         "event": "search",
-        "search_query": "stores near me"
+        "search_query": "stores near me",
+        "path": "/support/store-locator"
       },
       {
         "event": "screen_view",
@@ -5697,7 +5840,7 @@
         "event": "add_to_cart",
         "product_name": "Classic Leather Sneakers",
         "product_category": "gifts",
-        "price": 139.99
+        "price": "$85"
       },
       {
         "event": "screen_view",
@@ -5825,6 +5968,11 @@
         "page_title": "Nike Air Zoom Pegasus - Details"
       },
       {
+        "event": "remove_from_cart",
+        "product_name": "Nike Air Zoom Pegasus",
+        "reason": "Found better alternative"
+      },
+      {
         "event": "screen_view",
         "path": "/blog/best-running-shoes-2023",
         "page_title": "Best Running Shoes 2023"
@@ -5888,7 +6036,7 @@
         "event": "add_to_cart",
         "product_id": "air-max-2023",
         "category": "sneakers",
-        "price": 139.99
+        "price": 199.99
       },
       {
         "event": "screen_view",
@@ -5914,6 +6062,12 @@
         "event": "screen_view",
         "path": "/products/running/nike-air-zoom-pegasus-40",
         "page_title": "Nike Air Zoom Pegasus 40"
+      },
+      {
+        "event": "purchase",
+        "product_id": "nike-air-zoom-pegasus-40",
+        "price": 120,
+        "currency": "USD"
       },
       {
         "event": "screen_view",
@@ -5983,8 +6137,7 @@
         "product_id": "nike-air-max-2023",
         "product_name": "Nike Air Max 2023",
         "status": "failed",
-        "reason": "out_of_stock",
-        "price": 9.99
+        "reason": "out_of_stock"
       },
       {
         "event": "screen_view",
@@ -6044,8 +6197,7 @@
       {
         "event": "add_to_cart",
         "product_id": "air-max-2024",
-        "quantity": 1,
-        "price": 109.99
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -6286,7 +6438,7 @@
         "product_id": "nike-air-max-270",
         "product_name": "Nike Air Max 270 Sneakers",
         "category": "sneakers",
-        "price": 49.99
+        "price": 150
       },
       {
         "event": "screen_view",
@@ -6365,7 +6517,8 @@
       },
       {
         "event": "share",
-        "method": "copy_link"
+        "method": "copy_link",
+        "path": "/products/running-shoes/nike-air-zoom-pegasus"
       },
       {
         "event": "screen_view",
@@ -6415,8 +6568,7 @@
       {
         "event": "add_to_cart",
         "product_id": "air-max-2023",
-        "quantity": 1,
-        "price": 49.99
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -6801,14 +6953,11 @@
       {
         "event": "checkout",
         "product": "Ultra Comfort Runner",
-        "price": 120,
-        "items": 0,
-        "total_price": 0
+        "price": 120
       },
       {
         "event": "checkout_failed",
-        "items": 0,
-        "total_price": 0
+        "reason": "Payment gateway timeout"
       },
       {
         "event": "screen_view",
@@ -6844,7 +6993,7 @@
         "product_id": "nike-air-zoom-black",
         "product_name": "Nike Air Zoom Black Running Shoes",
         "category": "running-shoes",
-        "price": 39.99,
+        "price": 120,
         "quantity": 1
       },
       {
@@ -6869,7 +7018,8 @@
       },
       {
         "event": "search",
-        "search_query": "running shoes"
+        "search_query": "running shoes",
+        "path": "/products/sneakers"
       },
       {
         "event": "screen_view",
@@ -6915,8 +7065,7 @@
           "Black",
           "White"
         ],
-        "quantity": 3,
-        "price": 139.99
+        "quantity": 3
       },
       {
         "event": "screen_view",
@@ -7074,8 +7223,7 @@
       {
         "event": "add_to_cart",
         "product_id": "nike-air-zoom-pegasus",
-        "quantity": 1,
-        "price": 119.99
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -7140,8 +7288,7 @@
         "event": "add_to_cart",
         "product_slug": "air-max-2023",
         "category": "sneakers",
-        "quantity": 1,
-        "price": 29.99
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -7187,7 +7334,7 @@
         "event": "add_to_cart",
         "product_name": "Premium Leather Cleaner",
         "product_category": "accessories",
-        "price": 49.99
+        "price": 15.99
       },
       {
         "event": "screen_view",
@@ -7328,6 +7475,12 @@
         "page_title": "Nike Air Max 2023"
       },
       {
+        "event": "remove_from_cart",
+        "product_id": "air-max-2023",
+        "product_name": "Nike Air Max 2023",
+        "quantity": 1
+      },
+      {
         "event": "screen_view",
         "path": "/blog/top-10-running-shoes-2023",
         "page_title": "Top 10 Running Shoes of 2023"
@@ -7445,14 +7598,7 @@
       {
         "event": "checkout",
         "product_id": "air-max-2023",
-        "quantity": 1,
-        "items": 0,
-        "total_price": 0
-      },
-      {
-        "event": "checkout_success",
-        "items": 0,
-        "total_price": 0
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -7505,7 +7651,8 @@
       },
       {
         "event": "start_chat",
-        "reason": "Inquiry about order status"
+        "reason": "Inquiry about order status",
+        "path": "/support/order-tracking"
       },
       {
         "event": "screen_view",
@@ -7675,7 +7822,8 @@
       },
       {
         "event": "start_chat",
-        "message": "Can you help me find similar shoes to this one?"
+        "message": "Can you help me find similar shoes to this one?",
+        "path": "/products/sneakers/air-max-2023"
       },
       {
         "event": "screen_view",
@@ -7686,7 +7834,8 @@
         "event": "add_to_cart",
         "product": "Nike Air Max 2023",
         "category": "sneakers",
-        "price": 49.99
+        "price": 150,
+        "path": "/products/sneakers/air-max-2023/details"
       },
       {
         "event": "screen_view",
@@ -7827,8 +7976,7 @@
         "event": "add_to_cart",
         "product_id": "nike-air-max-270",
         "product_name": "Nike Air Max 270 Sneakers",
-        "quantity": 1,
-        "price": 69.99
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -7859,6 +8007,16 @@
         "event": "screen_view",
         "path": "/products/sneakers/adidas-ultraboost-22/details",
         "page_title": "Adidas Ultraboost 22 - Product Details"
+      },
+      {
+        "event": "checkout_failed",
+        "reason": "Payment declined",
+        "cart_items": [
+          {
+            "product_id": "nike-air-max-270",
+            "quantity": 1
+          }
+        ]
       }
     ]
   },
@@ -7982,8 +8140,7 @@
       {
         "event": "add_to_cart",
         "product_id": "white-classic-sneakers",
-        "quantity": 1,
-        "price": 29.99
+        "quantity": 1
       },
       {
         "event": "screen_view",
@@ -8301,7 +8458,7 @@
         "event": "add_to_cart",
         "product_id": "air-max-2024",
         "product_name": "Nike Air Max 2024",
-        "price": 119.99
+        "price": 150
       },
       {
         "event": "screen_view",
@@ -8319,9 +8476,21 @@
         "page_title": "Shipping Information"
       },
       {
+        "event": "remove_from_cart",
+        "product_id": "air-max-2024",
+        "product_name": "Nike Air Max 2024"
+      },
+      {
         "event": "screen_view",
         "path": "/products/sneakers/air-max-2024",
         "page_title": "Nike Air Max 2024"
+      },
+      {
+        "event": "purchase",
+        "product_id": "air-max-2024",
+        "product_name": "Nike Air Max 2024",
+        "price": 150,
+        "payment_method": "Credit Card"
       }
     ]
   },
@@ -8401,8 +8570,7 @@
       {
         "event": "add_to_cart",
         "product_id": "air-max-2023",
-        "size": "42",
-        "price": 119.99
+        "size": "42"
       },
       {
         "event": "screen_view",
@@ -8452,8 +8620,7 @@
         "event": "add_to_cart",
         "product_id": "air-max-2023",
         "category": "sneakers",
-        "quantity": 1,
-        "price": 139.99
+        "quantity": 1
       }
     ]
   }
