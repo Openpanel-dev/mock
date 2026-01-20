@@ -17,7 +17,7 @@ interface Config {
   hourlyVisitorProfile: number[];
 }
 
-const multiplier = 10
+const multiplier = 200
 
 export const CONFIG: Config = {
   redis: {
